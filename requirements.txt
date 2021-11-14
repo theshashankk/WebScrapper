@@ -1,0 +1,4 @@
+TgCrypto
+Pyrogram
+beautifulsoup4
+requests
