@@ -21,8 +21,8 @@ crush = shashank(
 )
 print('[INFO] PROCESSING PLUGINS')
 #plugins
-@crush.on_message(reels.command(['start', f'start@{BOT_TOKEN}']))
-async def startbot(message):
+@crush.on_message(reels.command(['start', 'start@WebScrapper_RoBoT']))
+async def startbot(message, sofiadidi):
   START_TEXT = 'Hey 👋,\n**im web Scrapper bot**\n__🛠️Send me website url/link to scrape website__'
   START_BUT = InlineKeyboardMarkup(
     [
@@ -37,4 +37,5 @@ async def startbot(message):
     text=START_TEXT,
     reply_markup=START_BUT
   )
+print('[INFO] STARTED BOT')
 crush.run()
