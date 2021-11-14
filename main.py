@@ -12,13 +12,14 @@ BOT_TOKEN = os.environ.get('BOT_TOKEN')
 API_ID = int(os.environ.get('API_ID'))
 API_HASH = os.environ.get('API_HASH'))
 
+print('[INFO] INITIALIZING CLIENT')
 crush = shashank(
   'web-scrapper',
   bot_token=BOT_TOKEN,
   api_id=API_ID,
   api_hash=API_HASH
 )
-
+print('[INFO] PROCESSING PLUGINS')
 #plugins
 @crush.on_message(reels.command(['start', f'start@{BOT_TOKEN}']))
 async def startbot(message):
@@ -36,3 +37,4 @@ async def startbot(message):
     text=START_TEXT,
     reply_markup=START_BUT
   )
+crush.run()
