@@ -33,6 +33,6 @@ async def startbot(message, sofiadidi):
         InlineKeyboardButton('🚧 Close', callback_data='cls')
       ]
     ])
-  await message.reply(START_TEXT, reply_markup=START_BUT)
+  await crush.send_message(START_TEXT, reply_markup=START_BUT)
 print('[INFO] STARTED BOT')
 crush.run()
