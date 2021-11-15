@@ -33,8 +33,8 @@ async def startbot(message, sofiadidi):
         InlineKeyboardButton('🚧 Close', callback_data='cls')
       ]
     ])
-    await message.reply(
-        text=START_TEXT,
+    await message.send_message(
+        START_TEXT,
         reply_markup=START_BUT
     )
 print('[INFO] STARTED BOT')
